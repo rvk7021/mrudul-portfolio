@@ -1,0 +1,140 @@
+  .information{
+    background-color: #fbfbfb7c;
+  }
+  .ProjectCard {
+    height: 250px;
+    transition: all 1s;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ProjectCard:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+  }
+ 
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(55, 1, 70); /* Adjust background color and opacity */
+    opacity: 0;
+    transition: opacity 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .ProjectCard:hover .overlay {
+    opacity: 1;
+  }
+  
+  .tech-stack {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .tech-stack li {
+
+    margin: 5px 0;
+    font-size: 15px;
+  }
+  
+  
+  .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    background: linear-gradient(45deg, #6a0dad, #c71585);
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button-github {
+    margin-left: 15px; /* Adjust margin as needed */
+  }
+
+  .projectbox {
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .projectbox h3 {
+    font-size: 24px;
+    font-weight: bolder;
+    background: linear-gradient(45deg, #6a0dad, #c71585);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 5px;
+    border-radius: 12px;  
+    text-align: center;
+  }
+
+
+  /* panel buttom css */
+  .projectbutton {
+    position: relative;
+    border: 1px solid rgb(88, 10, 136);
+    font-weight: bold;
+    border-radius: 25px; 
+    padding: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s 0.1s ease-out, background-color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+  .projectbutton span {
+    margin: 10px;
+  }
+  
+  .projectbutton::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  .projectbutton:hover {
+    color: rgb(93, 7, 119); 
+    background-color: rgb(255, 255, 255); /* Background color on hover */
+    border: 1px solid rgb(93, 7, 119); /* Border color on hover */
+  }
+  
+  .projectbutton:hover::before {
+    box-shadow: inset 0 0 0 10em rgba(238, 238, 238, 0.699);
+  }
+  
